@@ -10,7 +10,7 @@ export async function getServerSideProps() {
   try {
     const res = await fetch(apiUrl);
     console.log(res);
-    data = await res.json();
+    //data = await res.json();
   } catch (error) {
     console.error("Failed to fetch from AWS API:", error);
     data = { error: "Failed to fetch from AWS API" };
